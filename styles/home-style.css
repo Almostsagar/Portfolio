@@ -2,20 +2,51 @@ h3{
     color: #fff;
     font-size: 25px;
 }
+
+.head {
+    display: flex;
+    flex-direction: row;
+}
+
+.head img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
 .home-section h1 {
     font-size: 55px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-
+.wel-buts{
+    display: flex;
+    flex-direction: row;
+    
+}
 .btn:hover {
     transform: translateY(-3px);
 }
 .btn--bg {
     padding: 1rem 3rem;
     font-size: 1.2rem;
-    margin-top: 12vh;
+    margin-top: 12vh;    
+    margin-right: 20px;
 }
 
 .btn {
@@ -38,4 +69,18 @@ a {
     .home-section h1 {
         font-size: 28px;
     }
+    .btn--bg {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+        margin-top: 5vh;
+        margin-right: 0;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .wel-buts{
+        flex-direction: column;
+    }
+    
 }
