@@ -229,9 +229,7 @@ li.active a span.links_name{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(./assets/back.jpg);
-  /* background-repeat: no-repeat;   */  
-  
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/common-bg.svg);
 }
 
 #skills_section {

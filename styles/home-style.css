@@ -1,11 +1,17 @@
 
 
-.typing h3 {
+
+h3{
     color: #fff;
-    font-size: x-large;
+    font-size: 25px;
+}
+.home-section h1 {
+    font-size: 45px;
+    color: #fff;
 }
 
-.home-section h1 {
-    font-size: 35px;
-    color: #fff;
+@media (max-width: 600px) {
+    .home-section h1 {
+        font-size: 28px;
+    }
 }
