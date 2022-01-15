@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles/contact-style.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link href="logo.png" rel="icon" type="image/x-icon" />
+  <title>Sagar's Portfolio</title>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo-details">
+      <div class="logo_name">Sagar Kumar</div>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li class="links">
+        <a href="#home_section">
+          <i class='bx bx-home'></i>
+          <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li class="links">
+        <a href="#about_section">
+          <i class='bx bx-user'></i>
+          <span class="links_name">About</span>
+        </a>
+        <span class="tooltip">About</span>
+      </li>
+      <li class="links">
+        <a href="#skills_section">
+          <i class='bx bx-code-block'></i>
+          <span class="links_name">Skills</span>
+        </a>
+        <span class="tooltip">Skills</span>
+      </li>
+      <li class="links">
+        <a href="#projects_section">
+          <i class='bx bx-code-alt'></i>
+          <span class="links_name">Projects</span>
+        </a>
+        <span class="tooltip">Projects</span>
+      </li>
+      <li class="links">
+        <a href="#edu_section">
+          <i class='bx bxs-graduation'></i>
+          <span class="links_name">Education</span>
+        </a>
+        <span class="tooltip">Education</span>
+      </li>
+      <li class="links">
+        <a href="#exp_section">
+          <i class='bx bx-briefcase'></i>
+          <span class="links_name">Experience</span>
+        </a>
+        <span class="tooltip">Experience</span>
+      </li>
+      <li class="links">
+        <a href="#certi_section">
+          <i class='bx bx-award'></i>
+          <span class="links_name">Certificates</span>
+        </a>
+        <span class="tooltip">Certificates</span>
+      </li>
+      <li class="links">
+        <a href="#contact_section">
+          <i class='bx bx-phone-call'></i>
+          <span class="links_name">Contact me</span>
+        </a>
+        <span class="tooltip">Contact me</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Scroll to -->
+  <div class="scrollto" onclick="scrollto()">
+
+
+    <!-- main -->
+
+  </div>
+  <section class="home-section" id="home_section">
+    <div class="text"> This is Home section.</div>
+  </section>
+
+  <section class="home-section" id="about_section">
+    <div class="text"> This is About section.</div>
+  </section>
+
+  <section class="home-section" id="skills_section">
+    <div class="text"> This is Skills section.</div>
+  </section>
+
+  <section class="home-section" id="projects_section">
+    <div class="text"> This is Projects section.</div>
+  </section>
+
+  <section class="home-section" id="edu_section">
+    <div class="text"> This is Education section.</div>
+  </section>
+
+  <section class="home-section" id="exp_section">
+    <div class="text"> This is Experience section.</div>
+  </section>
+
+  <section class="home-section" id="certi_section">
+    <div class="text"> This is Certificates section.</div>
+  </section>
+
+  <!-- Contact -->
+  <section class="home-section" id="contact_section">
+    <div class="wrapper">
+      <header> Send me a message </header>
+      <form action="#">
+        <div class="dbl-field">
+          <div class="field">
+            <input type="text" placeholder="Enter your name">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="field">
+            <input type="text" placeholder="Enter your email">
+            <i class="fas fa-envelope"></i>
+          </div>
+        </div>
+        <div class="dbl-field">
+          <div class="field">
+            <input type="text" placeholder="Enter your phone">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="field">
+            <input type="text" placeholder="Enter your website">
+            <i class="fas fa-globe"></i>
+          </div>
+        </div>
+        <div class="message">
+          <textarea placeholder="Enter your message.... "></textarea>
+          <i class="material-icons">message</i>
+        </div>
+        <div class="button-area">
+          <button type="submit">
+            Send Message
+          </button>
+          <span>Sending Your Message....</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-menu"></div>
+    Made With ❤ by Sagar &nbsp; | &nbsp; © 2022 All Rights Reserved
+  </footer>
+
+  <!-- Sidebar code -->
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+
+    closeBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      menuBtnChange();//calling the function(optional)
+    });
+
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+      if (sidebar.classList.contains("open")) {
+        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+      } else {
+        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+      }
+    }
+  </script>
+
+
+  <!-- Scroll to -->
+  <script>
+    window.addEventListener('scroll', function () {
+      var scroll = document.querySelector('.scrollto');
+      scroll.classList.toggle("active", window.scrollY > 500);
+    })
+
+    function scrollto() {
+      window.scrollTo({
+        top: 0
+      })
+    }
+  </script>
+<!-- Active bar -->
+  <script>
+    const li = document.querySelectorAll('.links');
+    const di = document.querySelectorAll('section');
+
+    function activeMenu() {
+      let len = di.length;
+      while (--len && window.scrollY + 97 < di[len].offsetTop) { }
+      li.forEach((ltx) => {
+        ltx.classList.remove('active')
+      })
+      li[len].classList.add('active')
+    }
+    activeMenu();
+    window.addEventListener('scroll', activeMenu)
+  </script>
+</body>
+
+</html>
