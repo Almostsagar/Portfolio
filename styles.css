@@ -186,16 +186,6 @@ li.active a span.links_name{
   border-radius: 12px;
 }
 
-.home-section{
-  position: relative;
-  background: #E4E9F7;
-  min-height: 100vh;
-  top: 0;
-  left: 78px;
-  width: calc(100% - 78px);
-  transition: all 0.5s ease;
-  z-index: 2;
-}
 .sidebar.open ~ .home-section{
   left: 250px;
   width: calc(100% - 250px);
@@ -215,7 +205,18 @@ li.active a span.links_name{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/common-bg.svg);
+  background: linear-gradient(to right, rgba(0.8, 0, 0.8, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/common-bg.svg);
+}
+
+.home-section{
+  position: relative;
+  background: #E4E9F7;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
 }
 
 #skills_section {
@@ -235,7 +236,7 @@ li.active a span.links_name{
     min-height: 100%;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/common-bg.svg);
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/common-bg.svg); */
 }
 
 footer {
