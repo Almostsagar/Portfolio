@@ -43,7 +43,7 @@ li.active a span.links_name{
   right: 20px;
   width: 60px;
   height: 60px;
-  background:  url(up-arrow.png);
+  background:  url(assets/up-arrow.png);
   border-radius: 50%;
   background-size:  30px;
   background-position: center;
@@ -223,7 +223,15 @@ li.active a span.links_name{
 }
 
 #home_section {
-  background: #999999;
+  display: flex;
+  padding: 50px 50px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(assets/back.jpg);
+  /* background-repeat: no-repeat;   */  
+  
 }
 
 #skills_section {
@@ -263,7 +271,7 @@ footer {
   .sidebar li .tooltip{
     display: none;
   }
-
+  
   .sidebar .logo-details #btn {
    display: none;   
   }

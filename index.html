@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="./styles/contact-style.css">
+  <link rel="stylesheet" href="./styles/home-style.css">
   <!-- Boxicons CDN Link -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-  <link href="logo.png" rel="icon" type="image/x-icon" />
+  <link href="./assets/profile.jpg" rel="icon" type="image/x-icon" />
   <title>Sagar's Portfolio</title>
 </head>
 
@@ -91,7 +93,12 @@
 
   </div>
   <section class="home-section" id="home_section">
-    <div class="text"> This is Home section.</div>
+    <h1>&nbsp; Hey there 👋🏻 </h1>
+    <h1>I'm Sagar Kumar</h1>
+    <h3 style="color: #fff">
+      I'm <span class="typing"></span>
+    </h3>
+    <!-- <img src="assets/giphy.gif" alt=""> -->
   </section>
 
   <section class="home-section" id="about_section">
@@ -182,6 +189,16 @@
     }
   </script>
 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script type="text/javascript">
+    var typed = new Typed(".typing", {
+      strings: ["a Student", "a Flutter Developer", "a Programmer", "a Bookworm"],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 35,
+    });
+  </script>
+
 
   <!-- Scroll to -->
   <script>
@@ -196,7 +213,7 @@
       })
     }
   </script>
-<!-- Active bar -->
+  <!-- Active bar -->
   <script>
     const li = document.querySelectorAll('.links');
     const di = document.querySelectorAll('section');
