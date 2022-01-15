@@ -1,4 +1,4 @@
-h3{
+p{
     color: #fff;
     font-size: 25px;
 }
@@ -19,16 +19,7 @@ h2{
     font-size: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-.home-section h1 {
+.home-section p {
     font-size: 55px;
     color: #fff;
     text-transform: uppercase;
@@ -66,13 +57,13 @@ a {
     color: inherit;
 }
 @media (max-width: 600px) {
-    .home-section h1 {
+    .home-section p {
         font-size: 28px;
     }
     .btn--bg {
         padding: 0.8rem 1rem;
         font-size: 0.9rem;
-        margin-top: 5vh;
+        margin-top: 2vh;
         margin-right: 0;
     }
     a {
@@ -82,5 +73,9 @@ a {
     .wel-buts{
         flex-direction: column;
     }
-    
+    p{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
