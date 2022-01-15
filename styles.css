@@ -16,7 +16,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 
 /* Google Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*, *::after, *::before {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -249,8 +249,13 @@ li.active a span.links_name{
 footer {
   text-align: center;
   margin-top: 10px;  
-  margin-left: 78px;
   margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
 }
 
 
@@ -258,20 +263,35 @@ footer {
   .sidebar li .tooltip{
     display: none;
   }
+
   .sidebar .logo-details #btn {
    display: none;   
-}
-.sidebar .logo-details .logo_name {
+  }
+
+  .sidebar .logo-details .logo_name {
     display: none;
-}
-.sidebar .logo-details {
-  display: none;    
-}
-#contact_section {
-   flex-direction: column;
+  }
 
-}
+  .sidebar .logo-details {
+    display: none;    
+  }
 
+  #contact_section {
+    flex-direction: column;
+  }
+
+  .sidebar .open {
+    display: none;
+  }
+ .sidebar {
+   width: 46px;
+ }
+ .sidebar i {
+    min-width: 20px;
+}
+footer {
+    font-size: 13px;
+}
 }
 
 

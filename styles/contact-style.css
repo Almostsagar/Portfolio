@@ -1,17 +1,18 @@
 /* Google Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
     width: 720px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 10px 10px 5px  #aaaaaa;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .wrapper header {
@@ -53,11 +54,11 @@ form .field input::placeholder,
 form .message textarea::placeholder {
     color: #bfbfbf;
 }
- 
+
 
 form .field input:focus,
 form .message textarea:focus {
-    border:  2px solid #0D6EFD;
+    border: 2px solid #0D6EFD;
 }
 
 .wrapper form i {
@@ -71,12 +72,12 @@ form .message textarea:focus {
 }
 
 form .message {
-   position: relative;   
+    position: relative;
 }
 
-form .field input:focus ~ i ,
-form .message textarea:focus ~ i{
-   color: #0D6EFD;   
+form .field input:focus~i,
+form .message textarea:focus~i {
+    color: #0D6EFD;
 }
 
 form .message i {
@@ -84,7 +85,7 @@ form .message i {
     font-size: 20px;
 }
 
-form .message textarea{
+form .message textarea {
     min-width: 100%;
     min-height: 120px;
     max-width: 100%;
@@ -95,7 +96,7 @@ form .message textarea{
 form .button-area {
     margin: 25px 0;
     display: flex;
-    align-items: center;   
+    align-items: center;
 }
 
 .button-area button {
@@ -117,30 +118,59 @@ form .button-area {
     .wrapper {
         width: 100%;
     }
+
     .wrapper header {
         text-align: center;
     }
+
     form .dbl-field {
         margin-bottom: 20px;
         flex-direction: column;
     }
+
     .dbl-field .field {
         width: 100%;
         margin-bottom: 10px;
     }
+
     form .message textarea {
         resize: none;
     }
+
     form .button-area {
-        flex-direction: column;   
+        flex-direction: column;
     }
+
     .button-area button {
-        width: 100%;
+        font-size: 13px;
+        padding: 7px 18px;
     }
+
+    form .field input, form .message textarea {
+        font-size: 13px;
+    }
+
     .button-area span {
+        font-size: 13px;
         text-align: center;
         margin: 20px 0;
     }
 
-}
+    #contact_section {
+        padding: 50px 4px;
+    }
 
+    form .button-area {
+        margin: 13px 35px;
+    }
+
+    .home-section {
+        left: 46px;
+        width: calc(100% - 46px);
+    }
+
+    .wrapper form {
+        margin: 13px 14px;
+    }
+
+}
