@@ -16,6 +16,10 @@ html {
 body {  
   box-sizing: border-box;
 }
+.pp-scrollable{
+  /* overflow-y: scroll; */
+  /* height: 100%; */
+}
 
 li.active a i,
 li.active a span.links_name{
@@ -29,7 +33,7 @@ li.active a span.links_name{
   right: 20px;
   width: 60px;
   height: 60px;
-  background:  url(./assets/up-arrow.png);
+  background: url(./assets/up-arrow.png);
   border-radius: 50%;
   background-size:  30px;
   background-position: center;
@@ -233,9 +237,10 @@ li.active a span.links_name{
 #contact_section {
     display: flex;
     padding: 50px 50px;
-    min-height: 100%;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
+    background: white;
     /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/common-bg.svg); */
 }
 
