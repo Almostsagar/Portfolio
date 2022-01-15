@@ -1,22 +1,42 @@
-p{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+p {
     color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+h3 {
     font-size: 25px;
 }
 
 .head {
     display: flex;
     flex-direction: row;
+    top: 0;
 }
 
 .head img {
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    
 }
 
-h2{
+h2 {
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    font-size: 25px;    
+    margin-left: 2vh;
 }
 
 .home-section p {
@@ -25,18 +45,20 @@ h2{
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-.wel-buts{
+
+.wel-buts {
     display: flex;
     flex-direction: row;
-    
 }
+
 .btn:hover {
     transform: translateY(-3px);
 }
+
 .btn--bg {
     padding: 1rem 3rem;
     font-size: 1.2rem;
-    margin-top: 12vh;    
+    margin-top: 12vh;
     margin-right: 20px;
 }
 
@@ -56,24 +78,29 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 @media (max-width: 600px) {
     .home-section p {
         font-size: 28px;
     }
+
     .btn--bg {
         padding: 0.8rem 1rem;
         font-size: 0.9rem;
         margin-top: 2vh;
         margin-right: 0;
     }
+
     a {
         text-decoration: none;
         color: inherit;
     }
-    .wel-buts{
+
+    .wel-buts {
         flex-direction: column;
     }
-    p{
+
+    p {
         text-align: center;
         display: flex;
         flex-direction: column;

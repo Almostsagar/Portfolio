@@ -1,17 +1,3 @@
-/*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
-*/
 
 
 /* Google Font Link */
@@ -263,7 +249,20 @@ footer {
   transition: all 0.5s ease;
   z-index: 2;
 }
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
 
+Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
+*/
 @media (max-width: 600px) {
   .sidebar li .tooltip{
     display: none;
