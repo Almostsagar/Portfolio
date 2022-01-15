@@ -205,7 +205,7 @@ li.active a span.links_name{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(to right, rgba(0.8, 0, 0.8, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/common-bg.svg);
+  background: linear-gradient(to right, rgb(245, 45, 45,0.5), rgba(53, 90, 255, 0.8)), url(./assets/common-bg.svg);
 }
 
 .home-section{
