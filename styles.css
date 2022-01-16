@@ -340,6 +340,20 @@ $breakpoint arguement choices:
 Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
 */
 @media (max-width: 600px) {
+  .scrollto.active {
+    bottom: 2px;
+}
+
+.scrollto {
+    right: -1px;
+}
+
+
+
+
+  .scrollto:hover .tooltiptext {
+    visibility: hidden;
+  }
   .icons {
     display: none;
   }
