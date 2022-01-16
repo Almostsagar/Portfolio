@@ -7,7 +7,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-p {
+.home-section p {
     color: #fff;
     font-size: 25px;
     font-weight: 600;
@@ -45,6 +45,7 @@ h2 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 .wel-buts {

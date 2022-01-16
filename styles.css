@@ -16,10 +16,7 @@ html {
 body {  
   box-sizing: border-box;
 }
-.pp-scrollable{
-  /* overflow-y: scroll; */
-  /* height: 100%; */
-}
+
 
 li.active a i,
 li.active a span.links_name{
@@ -49,6 +46,54 @@ li.active a span.links_name{
   opacity: 1;
 }
 .scrollto.active:hover {
+  cursor: pointer;
+}
+.scrollto .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #040b14;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 20%;
+  left: -85%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.scrollto:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  position: fixed;
+  top: 42vh;
+  z-index: 1000;
+}
+
+.icons-sm {
+  padding: 3.5px;
+  background: transparent;
+
+}
+
+.icons a {
+  border: 0px white solid;
+  background: transparent;
+
+}
+
+.icons-sm:hover,
+.icons a:hover {
+    transform: translateY(-3px);
+  background: transparent;
   cursor: pointer;
 }
 .sidebar{
@@ -270,6 +315,9 @@ $breakpoint arguement choices:
 Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
 */
 @media (max-width: 600px) {
+  .icons {
+    display: none;
+  }
   .sidebar li .tooltip{
     display: none;
   }
