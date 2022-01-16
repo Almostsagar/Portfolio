@@ -1,8 +1,71 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#about-section {
+    background: white;
+}
 
 #about_section p {
     font-size: 22px;
+    margin: 0 50px 10px 50px;
     text-transform: none;
     letter-spacing: normal;
     text-align: left;
-    margin: 18px;
+    color: rgb(150, 148, 148);
+}
+
+#about_section .text {
+    padding: 20px;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.content-abt {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-abt img {
+    width: 50vh;
+    height: 50vh;
+    margin-left: 50px;
+    border-radius: 50%;
+}
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
+*/
+@media (max-width: 600px) {
+    .content-abt {
+        flex-direction: column;
+    }
+    .content-abt img {
+        align-self: center;
+        margin-left: 0;
+        width: 35vh;
+        height: 35vh;
+    }
+    #about_section p {
+        text-align: center;
+        margin: 40px 10px 40px 10px;
+        font-size: 15px;
+    }
 }

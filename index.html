@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -103,20 +99,19 @@
   <div class="scrollto" onclick="scrollto()">
     <span class="tooltiptext">Scroll to top?</span>
   </div>
-
   <!-- Socials -->
   <div class="icons">
     <a target="_blank" href="https://www.instagram.com/sagar.083">
-      <i class='bx bxl-instagram bx-lg icons-sm' style='color:#ffffff'></i>
+      <i class='bx bxl-instagram bx-lg icons-sm' style='color:#babbbd'></i>
     </a>
     <a target="_blank" href="https://www.twitter.com/almostsagar">
-      <i class='bx bxl-twitter bx-lg icons-sm' style='color:#ffffff'></i>
+      <i class='bx bxl-twitter bx-lg icons-sm' style='color:#babbbd'></i>
     </a>
     <a target="_blank" href="https://www.github.com/almostsagar">
-      <i class='bx bxl-github bx-lg icons-sm' style='color:#ffffff'></i>
+      <i class='bx bxl-github bx-lg icons-sm' style='color:#babbbd'></i>
     </a>
     <a target="_blank" href="https://stackoverflow.com//users/14549857/sagar-kumar">
-      <i class='bx bxl-stack-overflow bx-lg icons-sm' style='color:#ffffff'></i>
+      <i class='bx bxl-stack-overflow bx-lg icons-sm' style='color:#babbbd'></i>
     </a>
   </div>
 
@@ -140,14 +135,17 @@
 
 
 
-  <section class="home-section">
+  <section class="home-section" id="about-section">
     <div id="about_section">
       <div class="text">About Me</div>
-      <p> Hello, My name is Sagar Kumar. I am a Software Developer from Ramgarh, Jharkhand, India. Currently, I am in
-        junior year of B.Tech(C. Sci.) Degree. <br>
-        I love working on a variety of technologies including Web Development, Mobile App Development and Deep Learning.
-        My goal is to build highly performant applications that solve real-world problems and provide users with an
-        awesome experience.</p>
+      <div class="content-abt">
+        <img src="./assets/profile2.png" alt="">
+        <p>Hello, My name is Sagar Kumar. I am a Software Developer from Ramgarh, Jharkhand, India. Currently, I am in
+          Junior year of B.Tech(C. Sci.) degree. <br> <br>
+          I love working on a variety of technologies including Web Development, Mobile App Development and Java Development.
+          My goal is to build highly performant applications that solve real-world problems and provide users with an
+          awesome experience.</p>
+      </div>
     </div>
   </section>
 
@@ -182,26 +180,26 @@
       <form action="#">
         <div class="dbl-field">
           <div class="field">
-            <input type="text" placeholder="Enter your name">
+            <input type="text" name="name" placeholder="Enter your name">
             <i class="fas fa-user"></i>
           </div>
           <div class="field">
-            <input type="text" placeholder="Enter your email">
+            <input type="text" name="email" placeholder="Enter your email">
             <i class="fas fa-envelope"></i>
           </div>
         </div>
         <div class="dbl-field">
           <div class="field">
-            <input type="text" placeholder="Enter your phone">
+            <input type="text" name="phone" placeholder="Enter your phone">
             <i class="fas fa-phone-alt"></i>
           </div>
           <div class="field">
-            <input type="text" placeholder="Enter your website">
+            <input type="text" name="website" placeholder="Enter your website">
             <i class="fas fa-globe"></i>
           </div>
         </div>
         <div class="message">
-          <textarea placeholder="Enter your message.... "></textarea>
+          <textarea name="message" placeholder="Enter your message.... "></textarea>
           <i class="material-icons">message</i>
         </div>
         <div class="button-area">
@@ -218,6 +216,10 @@
     <div class="social-menu"></div>
     Made With ❤ by Sagar &nbsp; | &nbsp; 2022 
   </footer> -->
+
+  <!-- Contact code  -->
+  <script src="./js/script.js"></script>
+
 
   <!-- Sidebar code -->
   <script>
