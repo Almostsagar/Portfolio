@@ -7,7 +7,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+::-moz-selection { /* Code for Firefox */
+  background: rgb(0, 255, 200);
+}
 
+::selection {
+  background: rgb(0, 255, 200);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -52,7 +58,7 @@ li.active a span.links_name {
 .scrollto .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: #040b14;
+  background-color: #797979;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -226,7 +232,7 @@ li.active a span.links_name {
 }
 
 .sidebar li a:hover {
-  background: rgb(253, 210, 210);
+  background: rgb(255, 255, 255);
 }
 
 .sidebar li a .links_name {
@@ -282,7 +288,6 @@ li.active a span.links_name {
 
 .home-section {
   position: relative;
-  background: #E4E9F7;
   min-height: 100vh;
   top: 0;
   left: 78px;
@@ -342,32 +347,31 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 @media (max-width: 600px) {
   .scrollto.active {
     bottom: 2px;
-}
+  }
 
-.scrollto {
+  .scrollto {
     right: -1px;
-}
-
-
-
+  }
 
   .scrollto:hover .tooltiptext {
     visibility: hidden;
   }
+
   .icons {
     display: none;
   }
+
   .sidebar li a:hover .links_name,
-.sidebar li a:hover i {
-  transition: all 0.5s ease;
-  color: #8c939c;
-}
+  .sidebar li a:hover i {
+    transition: all 0.5s ease;
+    color: #8c939c;
+  }
 
   .sidebar li a:hover {
     background: transparent;
   }
- 
-    
+
+
   .sidebar li .tooltip {
     display: none;
   }
