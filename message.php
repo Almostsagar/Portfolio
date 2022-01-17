@@ -8,13 +8,13 @@
 
     if (!empty($email) && !empty($message)) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {  // if user entered email is valid
-            $to = "sagar19003@gmail.com"; // email receiver mail id
+            $recipient = "sagar19003@gmail.com"; // email receiver mail id
             $subject = "From: $name <$email>"; // subject of the email
             // merging all user values inside body variable.
             $body = "Name: $name \n Email: $email \n Phone: $phone \n Website: $website \n Message: $message \n ";
-            $sender = "From: $email";
+            $headers = "From: $email";
             // mail is inbuilt php function to send mail
-            if (mail($to, $subject, $body, $sender)) {
+            if (mail($recipient, $subject, $body, $headers)) {
                 echo "Your message has been send successful ✔";
             } else {
                 echo "Sorry, failed to send your message!";
