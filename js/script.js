@@ -8,16 +8,23 @@ form.onsubmit = (e) => {
     statusTxt.style.color = "#0D6EFD";
 
     let xhr = new XMLHttpRequest(); // creating xml object 
-    xhr.open("POST", "../message.php", true);  // sending post reuesT to message.php file
+    xhr.open("POST", "message.php", true);  // sending post reuesT to message.php file
+
     xhr.onload = () => {
         // once ajax loaded
         if (xhr.readyState == 4 && xhr.status == 200) {
             // if ajax response status is 200 & ready status is 4 means there is no error and we can proceed
             let response = xhr.response; // storing ajax res in a res variable
             // console.log(response);
-            if (response.indexOf("Email and Message field is required!") != -1 || response.indexOf("Enter a Valid email address!") || response.indexOf("Sorry, failed to send your message!")) {
+            if (response.indexOf("Email and Message field is required!") != -1 || response.indexOf("Enter a Valid email address!") != -1) {
                 statusTxt.style.color = "red";
-            } else {
+            } else if (response.indexOf("Your message has been sent successfully") != -1){
+                form.reset();
+                setTimeout(() => {
+                    statusTxt.style.display = "none";
+                }, 3000);
+            }
+            else {
                 form.reset();
                 setTimeout(() => {
                     statusTxt.style.display = "none";

@@ -1,4 +1,6 @@
 <?php
+if(isset($_POST['name'])){
+    $con = mysqli_connect('localhost', 'root', '','db_contact');
     // getting all the values
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -6,6 +8,7 @@
     $website = $_POST['website'];
     $message = $_POST['message'];
 
+    
     if (!empty($email) && !empty($message)) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {  // if user entered email is valid
             $recipient = "sagar19003@gmail.com"; // email receiver mail id
@@ -13,11 +16,18 @@
             // merging all user values inside body variable.
             $body = "Name: $name \n Email: $email \n Phone: $phone \n Website: $website \n Message: $message \n ";
             $headers = "From: $email";
+            $sql = "INSERT INTO `tbl_contact` (`id`, `fldName`, `fldEmail`, `fldPhone`,`fldSite`, `fldMessage`) VALUES ('0', '$name', '$email', '$phone','$website' ,'$message')";
+            $rs = mysqli_query($con, $sql);
+            
             // mail is inbuilt php function to send mail
-            if (mail($recipient, $subject, $body, $headers)) {
-                echo "Your message has been send successful ✔";
+        
+            // insert in database 
+            $rs = mysqli_query($con, $sql);
+            // if (mail($recipient, $subject, $body, $headers) || mysqli_query($con, $sql)) {
+            if (mysqli_query($con, $sql)) {
+                echo "Your message has been sent successfully";
             } else {
-                echo "Sorry, failed to send your message!";
+                echo "";
             }
         } else {
             echo "Enter a Valid email address!";
@@ -25,6 +35,7 @@
     } else {
         echo "Email and Message field is required!";
     }
+}
 
 ?>
 
