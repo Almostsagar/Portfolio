@@ -36,7 +36,7 @@ if(isset($_POST['name'])){
         echo "Email and Message field is required!";
     }
 }
-
+// mysql_close($conn);
 ?>
 
 
