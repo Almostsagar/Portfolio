@@ -22,11 +22,7 @@
         } else {
             echo "Enter a Valid email address!";
         }
-<<<<<<< HEAD
     } else {
-=======
-    } else { 
->>>>>>> da83a4360c61108271fb2267f0fef1f1d8f81ab9
         echo "Email and Message field is required!";
     }
 
