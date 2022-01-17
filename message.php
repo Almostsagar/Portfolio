@@ -8,7 +8,7 @@
 
     if (!empty($email) && !empty($message)) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {  // if user entered email is valid
-            $recipient = "sagar19003@gmail.com"; // email receiver mail id
+            $recipient = "$email"; // email receiver mail id
             $subject = "From: $name <$email>"; // subject of the email
             // merging all user values inside body variable.
             $body = "Name: $name \n Email: $email \n Phone: $phone \n Website: $website \n Message: $message \n ";
