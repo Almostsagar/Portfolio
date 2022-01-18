@@ -8,7 +8,7 @@ form.onsubmit = (e) => {
     statusTxt.style.color = "#0D6EFD";
 
     let xhr = new XMLHttpRequest(); // creating xml object 
-    xhr.open("POST", "message.php", true);  // sending post reuesT to message.php file
+    xhr.open("POST", "../php/message.php", true);  // sending post reuesT to message.php file
 
     xhr.onload = () => {
         // once ajax loaded
