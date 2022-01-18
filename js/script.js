@@ -16,14 +16,17 @@ form.onsubmit = (e) => {
             // if ajax response status is 200 & ready status is 4 means there is no error and we can proceed
             let response = xhr.response; // storing ajax res in a res variable
             // console.log(response);
-            if (response.indexOf("Email and Message field is required!") != -1 || response.indexOf("Enter a Valid email address!") != -1 || response.indexOf("Sorry, failed to send your message!") != -1) {
+            // if (response.indexOf("Email and Message field is required!") != -1 || response.indexOf("Enter a Valid email address!") != -1 || response.indexOf("Sorry, failed to send your message!") != -1) {
+            if (response.indexOf("Sorry, failed to send your message!") != -1) {
+
                 statusTxt.style.color = "red";
-            } else if (response.indexOf("Your message has been sent successfully") ){
-                form.reset();
-                setTimeout(() => {
-                    statusTxt.style.display = "none";
-                }, 3000);
-            }
+            } 
+            // else if (response.indexOf("Your message has been sent successfully") ){
+            //     form.reset();
+            //     setTimeout(() => {
+            //         statusTxt.style.display = "none";
+            //     }, 3000);
+            // }
             else {
                 form.reset();
                 setTimeout(() => {
