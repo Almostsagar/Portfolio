@@ -30,12 +30,13 @@ if(isset($_POST['name'])){
             else{
                 echo "Sorry, failed to send your message!";
              }
-        } else {
-            echo "Enter a Valid email address!";
-        }
-    } else {
-        echo "Email and Message field is required!";
+    //     } else {
+    //         echo "Enter a Valid email address!";
+    //     }
+    // } else {
+    //     echo "Email and Message field is required!";
     }
+}
 }
 // mysql_close($conn);
 ?>
