@@ -10,6 +10,7 @@
 
 #about-section {
     background: white;
+    
 }
 
 #about_section p {
@@ -30,6 +31,8 @@
 .content-abt {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-top: 5vh;
 }
 
 .content-abt img {
@@ -56,6 +59,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 @media (max-width: 600px) {
     .content-abt {
         flex-direction: column;
+        margin-top: 0;
     }
     .content-abt img {
         align-self: center;
@@ -67,5 +71,9 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
         text-align: center;
         margin: 40px 10px 40px 10px;
         font-size: 15px;
+    }
+    #about_section .text{
+        text-align: center;
+        font-size: 25px;
     }
 }

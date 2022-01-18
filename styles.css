@@ -89,7 +89,7 @@ li.active a span.links_name {
 .icons-sm {
   padding: 3.5px;
   background: transparent;
-
+  color:#302f2f;
 }
 
 .icons a {
@@ -103,6 +103,7 @@ li.active a span.links_name {
   transform: translateY(-3px);
   background: transparent;
   cursor: pointer;
+  color: #181818;
 }
 
 .sidebar {
@@ -115,6 +116,7 @@ li.active a span.links_name {
   padding: 6px 14px;
   z-index: 99;
   transition: all 0.5s ease;
+  user-select: none;
   /* overflow-y: scroll; */
 }
 
@@ -279,6 +281,7 @@ li.active a span.links_name {
 #home_section {
   display: flex;
   padding: 50px 50px;
+  user-select: none;
   min-height: 100vh;
   align-items: center;
   justify-content: center;

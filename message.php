@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['name'])){
-    $con = mysqli_connect('localhost', 'root', '','db_contact');
+    $con = mysqli_connect('brpzdjbit1eqghi7tdps-mysql.services.clever-cloud.com', 'ui1eikk4efljfisi', 'hC8kk9LHlHuc6NoePbWK','brpzdjbit1eqghi7tdps');
     // getting all the values
     $name = $_POST['name'];
     $email = $_POST['email'];
