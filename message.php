@@ -26,9 +26,10 @@ if(isset($_POST['name'])){
             // if (mail($recipient, $subject, $body, $headers) || mysqli_query($con, $sql)) {
             if (mysqli_query($con, $sql)) {
                 echo "Your message has been sent successfully";
-            } else {
-                echo "";
-            }
+            } 
+            else{
+                echo "Sorry, failed to send your message!";
+             }
         } else {
             echo "Enter a Valid email address!";
         }
