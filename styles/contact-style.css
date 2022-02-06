@@ -167,8 +167,8 @@ form .button-area {
     }
 
     .home-section {
-        left: 46px;
-        width: calc(100% - 46px);
+        left: 0;
+        width: 100%;
     }
 
     .wrapper form {
