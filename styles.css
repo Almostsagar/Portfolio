@@ -12,7 +12,7 @@
 }
 
 ::selection {
-  background: rgb(0, 255, 200);
+  background: #00ffc8;
 }
 html {
   scroll-behavior: smooth;
@@ -44,7 +44,11 @@ li.active a span.links_name {
   z-index: 10;
   transition: 0.5s;
 }
-
+.heading-text {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800px;
+}
 .scrollto.active {
   bottom: 40px;
   visibility: visible;
@@ -299,9 +303,9 @@ li.active a span.links_name {
   z-index: 2;
 }
 
-#skills_section {
+/* #skills_section {
   background: #999999;
-}
+} */
 
 #edu_section {
   background: #999999;
@@ -351,7 +355,9 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   .scrollto.active {
     bottom: 2px;
   }
-
+  .sidebar li a:hover {
+    background: rgb(255, 255, 255);
+  }
   .scrollto {
     right: -1px;
   }
@@ -375,8 +381,8 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   left: -86px;
   }
   .sidebar.open~.home-section {
-    left: -270px;
-    width: 0;
+    /* left: -270px; */
+    /* width: 0; */
 }
 .sidebar .logo-details {
   position: fixed;
@@ -384,7 +390,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   left: 50px;
 }
   .sidebar.open {
-    width: 100%;
+    width: 60%;
     background:#040b14;
 }
 /* 

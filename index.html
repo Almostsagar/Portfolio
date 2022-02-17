@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,13 @@
   <link rel="stylesheet" href="./styles/contact-style.css">
   <link rel="stylesheet" href="./styles/home-style.css">
   <link rel="stylesheet" href="./styles/about-style.css">
+  <link rel="stylesheet" href="./styles/skills-style.css">
 
   <!--CDN Links -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" />
   <link href="./assets/profile.png" rel="icon" type="image/x-icon" />
   <title>Sagar's Portfolio</title>
 </head>
@@ -136,12 +138,13 @@
 
   <section class="home-section" id="about-section">
     <div id="about_section">
-      <div class="text">About Me</div>
+      <div class="text heading-text">About Me</div>
       <div class="content-abt">
         <img src="./assets/profile2.png" alt="sagar's image">
         <p>Hello, My name is Sagar Kumar. I am a Software Developer from Ramgarh, Jharkhand, India. Currently, I am in
           Junior year of B.Tech(C. Sci.) degree. <br> <br>
-          I love working on a variety of technologies including Web Development, Mobile App Development and Java Development.
+          I love working on a variety of technologies including Web Development, Mobile App Development and Java
+          Development.
           My goal is to build highly performant applications that solve real-world problems and provide users with an
           awesome experience.</p>
       </div>
@@ -153,7 +156,57 @@
 
 
   <section class="home-section" id="skills_section">
-    <div class="text"> This is Skills section.</div>
+    <header class="text">Skills</header>
+    <div class="skill">
+      <div class="set">
+        <span class="fas fa-globe"></span>
+        <header>Web Development</header>
+        <div class="list">
+          <label>Html</label>
+          <i class="fab fa-html5"></i>
+        </div>
+        <div class="list">
+          <label>Css</label>
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <div class="list">
+          <label>JavaScript</label>
+          <i class="fab fa-js"></i>
+        </div>
+        <div class="list">
+          <label>Php</label>
+          <i class="fab fa-php"></i>
+        </div>
+      </div>
+      <div class="set">
+        <span class="fas fa-tools"></span>
+        <header>Frameworks/ Tools </header>
+        <div class="list">
+          <label>Angular</label>
+          <i class="fab fa-angular"></i>
+        </div>
+        <div class="list">
+          <label>Node.js</label>
+          <i class="fab fa-node-js"></i>
+        </div>
+        <div class="list">
+          <label>Bootstrap</label>
+          <i class="fab fa-bootstrap"></i>
+        </div>
+      </div>
+      <div class="set">
+        <span class="fas fa-mobile-alt"></span>
+        <header>Mobile Development</header>
+        <div class="list">
+          <label>Android</label>
+          <i class="fab fa-android"></i>
+        </div>
+        <div class="list">
+          <label>Ios</label>
+          <i class="fab fa-apple"></i>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="home-section" id="projects_section">
@@ -240,8 +293,8 @@
       }
     }
   </script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script type="text/javascript">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script type="text/javascript">
     var typed = new Typed(".typing", {
       strings: ["a Backend-Developer.", "a Flutter Developer.", "a Front-End Developer.", "a Bookworm."],
       loop: true,
