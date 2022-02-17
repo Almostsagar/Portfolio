@@ -1,5 +1,5 @@
 :root {
-    --primary: #f66440;
+    --primary: rgb(150, 148, 148);;
     --text: #363636;
     --light: #888888;
 }
@@ -34,6 +34,9 @@ section .skill {
     .skill {
         grid-template-columns: 1fr;
     }
+    #skills_section .text {
+        font-size: 25px;
+    }
 }
 
 .skill .set {
@@ -41,10 +44,13 @@ section .skill {
     padding: 24px;
     border-radius: 16px;
     cursor: pointer;
+    box-shadow: 0px 12px 16px #36363624;
+
 }
 
 .skill .set:hover {
-    box-shadow: 0px 12px 16px #36363624;
+    box-shadow: none;
+
 }
 
 .set span {
@@ -62,10 +68,12 @@ section .skill {
 }
 .set > header {
     padding-block: 24px;
-    font-size: 24px;
+    font-size: 22px;
     color: var(--primary);
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: normal;
+    font-weight: 600;
 }
 
 .set .list {
@@ -74,6 +82,9 @@ section .skill {
     grid-template-columns: 1fr 28px;
     color: var(--light);
     text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: normal;
+
 }
 .set:hover .list {
     color: var(--text);
