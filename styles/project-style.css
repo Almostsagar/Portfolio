@@ -178,9 +178,9 @@ ol.content {
     position: absolute;
     top: 0;
     background: rgba(0, 0, 0, 0.04);
-    height: 87%;
+    height: 84.5%;
     left: 0px;
-    right: 5px;
+    right: 0px;
     bottom: 0;
     color: var(--third-color);
     opacity: 0;
