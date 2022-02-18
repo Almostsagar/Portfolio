@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-::selection {
+/* ::selection {
     user-select: none;
-}
+} */
 :root {
     --primary-color: #00ffc8;
     --secondary-color: #6b6b6b;
