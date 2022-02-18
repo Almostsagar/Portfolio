@@ -96,6 +96,10 @@ img {
     border-radius: 6px;
     color: var(--secondary-color);
     transition: all .5s;
+    color: var(--light);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: normal;
 }
 /* img {
     position: relative;
@@ -104,7 +108,7 @@ img {
     /* height: 250px; */
 /* } */ 
 .navigation a:hover {
-    color: var(--third-color);
+    color: black;
     background-color: var(--primary-color);
 }
 
@@ -153,7 +157,9 @@ ol.content {
     border-radius: 8px;
 }
 .common:hover{
-    box-shadow: none;
+    /* box-shadow: none; */
+    padding: 20px;
+
 }
 .multi-shot {
     position: relative;

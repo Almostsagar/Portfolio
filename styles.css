@@ -7,13 +7,16 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-::-moz-selection { /* Code for Firefox */
+
+::-moz-selection {
+  /* Code for Firefox */
   background: rgb(0, 255, 200);
 }
 
 ::selection {
   background: #00ffc8;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -44,11 +47,13 @@ li.active a span.links_name {
   z-index: 10;
   transition: 0.5s;
 }
+
 .heading-text {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 800px;
 }
+
 .scrollto.active {
   bottom: 40px;
   visibility: visible;
@@ -93,7 +98,7 @@ li.active a span.links_name {
 .icons-sm {
   padding: 3.5px;
   background: transparent;
-  color:#302f2f;
+  color: #302f2f;
 }
 
 .icons a {
@@ -237,6 +242,8 @@ li.active a span.links_name {
   background: #040b14;
 }
 
+
+
 .sidebar li a:hover {
   background: rgb(255, 255, 255);
 }
@@ -268,6 +275,7 @@ li.active a span.links_name {
   font-size: 18px;
   border-radius: 12px;
 }
+
 .sidebar.open~.home-section {
   left: 0;
   width: calc(100% - 0px);
@@ -279,7 +287,17 @@ li.active a span.links_name {
     width: calc(100% - 0px);
     opacity: 0.5;
   }
+
+  .sidebar li a:hover {
+    background: #040b14;
+  }
+  
 }
+
+
+
+
+
 .home-section .text {
   display: inline-block;
   color: #040b14;
@@ -358,18 +376,30 @@ $breakpoint arguement choices:
 Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
 */
 @media (max-width: 605px) {
+
   .scrollto.active {
     bottom: 2px;
   }
-  .sidebar li a:hover {
-    background: rgb(255, 255, 255);
+
+  .sidebar li a .links_name:hover,
+  .sidebar li a i:hover {
+    color: white;
+
   }
+
+  /* .sidebar li a i:hover,
+  .sidebar li a span.links_name:hover {
+  transition: all 0.5s ease;
+  color: #fff;
+} */
   .scrollto {
     right: -1px;
   }
+
   .scrollto {
     display: none;
   }
+
   .scrollto:hover .tooltiptext {
     visibility: hidden;
   }
@@ -377,35 +407,41 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   .icons {
     display: none;
   }
+
   .sidebar .nav-list {
     display: none;
-}
-.sidebar.open .nav-list {
-  display: block;
-  width: 70%;
-  margin-top: 70px;
-}
-.sidebar.open .logo-details #btn {
-  left: -86px;
   }
+
+  .sidebar.open .nav-list {
+    display: block;
+    width: 70%;
+    margin-top: 70px;
+  }
+
+  .sidebar.open .logo-details #btn {
+    left: -86px;
+  }
+
   /* .sidebar.open~.home-section {
     /* left: -270px; */
-    /* width: 0; */
-/* } */
-.sidebar .logo-details {
-  position: fixed;
-  top: 10px;
-  left: 50px;
-}
+  /* width: 0; */
+  /* } */
+  .sidebar .logo-details {
+    position: fixed;
+    top: 10px;
+    left: 50px;
+  }
+
   .sidebar.open {
     width: 60%;
-    background:#040b14;
-}
-/* 
+    background: #040b14;
+  }
+
+  /* 
   .sidebar li a:hover .links_name,
   .sidebar li a:hover i {
     transition: all 0.5s ease;
-    color: #8c939c;
+    color: #8c99c;
   }
 
   .sidebar li a:hover {
@@ -430,7 +466,8 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   } */
   .home-section {
     width: 100%;
-}
+  }
+
   #contact_section {
     flex-direction: column;
   }
