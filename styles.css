@@ -311,14 +311,14 @@ li.active a span.links_name {
   background: #999999;
 }
 
-#certi_section {
+/* #certi_section {
   background: #999999;
-}
+} */
 
 #contact_section {
   display: flex;
-  padding: 50px 50px;
-  min-height: 100vh;
+  padding: 0px 0px;
+  min-height: 75vh;
   align-items: center;
   justify-content: center;
   background: white;

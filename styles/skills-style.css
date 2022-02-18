@@ -11,7 +11,7 @@ section>header {
     font-size: 44px;
     text-transform: uppercase;
     text-align: center;
-    padding: 24px;
+    /* padding: 24px; */
     color: var(--primary);
 }
 
@@ -45,7 +45,6 @@ section .skill {
     border-radius: 16px;
     cursor: pointer;
     box-shadow: 0px 12px 16px #36363624;
-
 }
 
 .skill .set:hover {

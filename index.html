@@ -12,12 +12,15 @@
   <link rel="stylesheet" href="./styles/home-style.css">
   <link rel="stylesheet" href="./styles/about-style.css">
   <link rel="stylesheet" href="./styles/skills-style.css">
-
+<link rel="stylesheet" href="./styles/project-style.css">
+<link rel="stylesheet" href="./styles/lightbox.min.css">
   <!--CDN Links -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link href="./assets/profile.png" rel="icon" type="image/x-icon" />
   <title>Sagar's Portfolio</title>
 </head>
@@ -210,7 +213,256 @@
   </section>
 
   <section class="home-section" id="projects_section">
-    <div class="text"> This is Projects section.</div>
+    <header class="text">Projects</header>
+    <div class="container-fluid filterbox">
+      <div class="filter-tabs">
+          <div class="filter-sort">
+              <div class="navigation">
+                  <a href="javascript:void(0)" data-filter="all" class="button active">All</a>
+                  <a href="javascript:void(0)" data-filter="web" class="button ">Web</a>
+                  <a href="javascript:void(0)" data-filter="flutter" class="button ">Flutter</a>
+                  <a href="javascript:void(0)" data-filter="android" class="button ">Android</a>
+                  <a href="javascript:void(0)" data-filter="uiux" class="button ">UI/UX</a>
+              </div>
+          </div>
+      </div>
+      <div class="main-wrap wrap-inner">
+          <div id="content">
+              <div class="main-full" id="main">
+                  <ol class="content">
+                      <li class="common team shot-thumbnail web">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="/assets/1.png" class="dribble-over" data-lightbox="mygallary1"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span>
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-code"></i>
+                                              </a>
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="common team shot-thumbnail web">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary2"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span>
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-code"></i>
+                                              </a>
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="common team shot-thumbnail flutter">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary3"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span>
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-code"></i>
+                                              </a>
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="common team shot-thumbnail flutter">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary4"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span>
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-code"></i>
+                                              </a>
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="common team shot-thumbnail android">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary5"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span>
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-code"></i>
+                                              </a>
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="common team shot-thumbnail uiux">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary6"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span>
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-code"></i>
+                                              </a>
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
   </section>
 
   <section class="home-section" id="edu_section">
@@ -222,46 +474,270 @@
   </section>
 
   <section class="home-section" id="certi_section">
-    <div class="text"> This is Certificates section.</div>
+    <header class="text">Certificates</header>
+    <div class="container-fluid filterbox">
+      <div class="main-wrap wrap-inner">
+          <div id="content">
+              <div class="main-full" id="main">
+                  <ol class="content">
+                      <li class="common team shot-thumbnail">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <!-- <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span> -->
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="common team shot-thumbnail">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <!-- <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span> -->
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="common team shot-thumbnail">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <!-- <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span> -->
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="common team shot-thumbnail">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <!-- <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span> -->
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="common team shot-thumbnail">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <!-- <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span> -->
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="common team shot-thumbnail">
+                          <div class="multi-shot">
+                              <div class="dribble-img">
+                                  <a href="#" class="dribble-link">
+                                      <picture>
+                                          <img src="./assets/1.png" alt="image-1">
+                                      </picture>
+                                  </a>
+                                  <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                      data-title="Dribble">
+                                      <strong class="hover-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam laborum,
+                                          aliquam possimus corporis consequatur animi doloribus rem ducimus adipisci
+                                          earum est, quas odio hic quibusdam, repudiandae ipsum? Nesciunt, dolores!
+                                      </strong>
+                                      <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                  </a>
+                                  <div class="dribble-title">
+                                      <h3>My Portfolio
+                                          <!-- <span class="m-team">Html</span>
+                                          <span class="m-team">Css</span>
+                                          <span class="m-team">Js </span> -->
+                                          <span class="comment">
+                                              <a href="https://github.com/Almostsagar" target="_blank">
+                                                  <i class="fa fa-tv"></i>
+                                              </a>
+                                          </span>
+                                      </h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
   </section>
 
   <!-- Contact -->
-  <section class="home-section" id="contact_section">
-    <div class="wrapper">
-      <header> Send me a message </header>
-      <!-- <form action="https://formspree.io/f/mbjwdoqa" method="POST"> -->
-      <form action="#contact_section" method="POST">
-        <div class="dbl-field">
-          <div class="field">
-            <input type="text" name="name" placeholder="Enter your name">
-            <i class="fas fa-user"></i>
+  <section class="home-section" id="contactheader">
+    <header class="text">Contact</header>
+    <div class="nayacontainer" id="contact_section">
+      <div class="wrapper">
+        <header> Send me a message </header>
+        <!-- <form action="https://formspree.io/f/mbjwdoqa" method="POST"> -->
+        <form action="#contact_section" method="POST">
+          <div class="dbl-field">
+            <div class="field">
+              <input type="text" name="name" placeholder="Enter your name">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="field">
+              <input type="text" name="email" name="_replyto" placeholder="Enter your email" required>
+              <i class="fas fa-envelope"></i>
+            </div>
           </div>
-          <div class="field">
-            <input type="text" name="email" name="_replyto" placeholder="Enter your email" required>
-            <i class="fas fa-envelope"></i>
+          <div class="dbl-field">
+            <div class="field">
+              <input type="text" name="phone" placeholder="Enter your phone" required>
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="field">
+              <input type="text" name="website" placeholder="Enter your website">
+              <i class="fas fa-globe"></i>
+            </div>
           </div>
-        </div>
-        <div class="dbl-field">
-          <div class="field">
-            <input type="text" name="phone" placeholder="Enter your phone" required>
-            <i class="fas fa-phone-alt"></i>
+          <div class="message">
+            <textarea name="message" placeholder="Enter your message.... " required></textarea>
+            <i class="material-icons">message</i>
           </div>
-          <div class="field">
-            <input type="text" name="website" placeholder="Enter your website">
-            <i class="fas fa-globe"></i>
+          <div class="button-area">
+            <button type="submit">
+              Send Message
+            </button>
+            <span>Sending Your Message....</span>
           </div>
-        </div>
-        <div class="message">
-          <textarea name="message" placeholder="Enter your message.... " required></textarea>
-          <i class="material-icons">message</i>
-        </div>
-        <div class="button-area">
-          <button type="submit">
-            Send Message
-          </button>
-          <span>Sending Your Message....</span>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -333,6 +809,9 @@
     activeMenu();
     window.addEventListener('scroll', activeMenu)
   </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="./js/lightbox-plus-jquery.min.js"></script>
+      <script src="./js/main.js"> </script>
 </body>
 
 </html>

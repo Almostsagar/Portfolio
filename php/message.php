@@ -17,7 +17,7 @@ if(isset($_POST['name'])){
             $body = "Name: $name \n Email: $email \n Phone: $phone \n Website: $website \n Message: $message \n ";
             $headers = "From: $email";
             $sql = "INSERT INTO `tbl_contact` (`id`, `fldName`, `fldEmail`, `fldPhone`,`fldSite`, `fldMessage`) VALUES ('0', '$name', '$email', '$phone','$website' ,'$message')";
-            $rs = mysqli_query($con, $sql);
+            // $rs = mysqli_query($con, $sql);
             
             // mail is inbuilt php function to send mail
         
