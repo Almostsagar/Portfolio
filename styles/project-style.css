@@ -51,7 +51,7 @@ img {
 
     font-size: 5vh;
 }
-@media (max-width: 605) {
+@media (max-width: 605px) {
     
 
     #projects_section .text {
@@ -269,6 +269,7 @@ ol.content {
         display: flex;
         overflow-x: scroll;
         margin-top: 15px;
+        padding-left: 6.5vh;
         padding-bottom: 15px;
     }
 

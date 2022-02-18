@@ -81,7 +81,7 @@ a {
     color: inherit;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 605px) {
     .home-section p {
         font-size: 28px;
     }

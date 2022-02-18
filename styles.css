@@ -435,6 +435,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 
   .sidebar {
     /* width: 46px; */
+    /* display: none; */
     background: transparent;
   }
 
