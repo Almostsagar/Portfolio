@@ -178,9 +178,9 @@ ol.content {
     position: absolute;
     top: 0;
     background: rgba(0, 0, 0, 0.04);
-    height: 90%;
-    left: 0;
-    right: 0;
+    height: 87%;
+    left: 0px;
+    right: 5px;
     bottom: 0;
     color: var(--third-color);
     opacity: 0;
@@ -211,9 +211,13 @@ ol.content {
 
 
 .dribble-title h3 {
-    font-size: 13px;
+    font-size: 16px;
     color: var(--six-color);
     font-weight: 500;
+    color: var(--light);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: normal;
 }
 
 .dribble-title .m-team {
@@ -242,6 +246,10 @@ ol.content {
     .filterbox {
         padding: 0px 40px;
     }
+    .dribble-over {
+        height: 87%;
+        right: 0; 
+    }
 }
 
 @media (max-width: 992px) {
@@ -256,13 +264,20 @@ ol.content {
     .navigation a {
         padding: 9px 12px;
     }
+    .dribble-over {
+        height: 85%;
+        right: 0; 
+    }
 }
 
 @media (max-width: 767px) {
     .shot-thumbnail {
         margin-top: 20px;
     }
-
+    .dribble-over {
+        height: 87%;
+        right: 0; 
+    }
     .filter-tabs {
         flex-wrap: wrap;
     }

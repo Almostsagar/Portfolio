@@ -120,8 +120,9 @@
       <img src="./assets/profile.jpg" alt="">
       <h2>Sagar Kumar</h2>
     </div> -->
-    
-        <p>Hey , <a href="./assets/giphy.gif" data-lightbox="bilai" data-title="bilai"><img src="./assets/wave-hello.gif" alt="hello" class="hand-wave"></a><span> I'm Sagar </span></p>
+
+        <p>Hey , <a href="./assets/giphy.gif" data-lightbox="bilai" data-title="bilai"><img
+                    src="./assets/wave-hello.gif" alt="hello" class="hand-wave"></a><span> I'm Sagar </span></p>
         <h3 style="color: #fff">
             I'm <span class="typing"></span>
         </h3>
@@ -745,14 +746,14 @@
             sidebar.classList.toggle("open");
             menuBtnChange();//calling the function(optional)
         });
-        closeBtn2.forEach(function(userItem) {
+        closeBtn2.forEach(function (userItem) {
             userItem.addEventListener("click", () => {
-            sidebar.classList.remove("open");
-            menuBtnChange();//calling the function(optional)
+                sidebar.classList.remove("open");
+                menuBtnChange();//calling the function(optional)
+            });
+
         });
 
-});
-        
         // following are the code to change sidebar button(optional)
         function menuBtnChange() {
             if (sidebar.classList.contains("open")) {
@@ -772,6 +773,15 @@
         });
     </script>
 
+    <!-- Lightbox2 is licensed under The MIT License. -->
+    <!-- Used from https://lokeshdhakar.com/projects/lightbox2/ by lokesh dhankar -->
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'disableScrolling': true
+        })
+    </script>
 
     <!-- Scroll to -->
     <script>

@@ -23,6 +23,7 @@ html {
 
 body {
   box-sizing: border-box;
+  /* overflow:hidden; */
 }
 
 li.active a i,
@@ -174,12 +175,12 @@ li.active a span.links_name {
   text-align: center;
   cursor: pointer;
   transition: all 0.5s ease;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .sidebar.open .logo-details #btn {
   text-align: right;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .sidebar i {
@@ -292,6 +293,9 @@ li.active a span.links_name {
     background: #040b14;
   }
    */
+   .sidebar .logo-details #btn {
+    color: rgb(0, 0, 0);
+  }
 }
 
 
