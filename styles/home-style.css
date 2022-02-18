@@ -76,6 +76,11 @@ h2 {
     transition: transform .3s;
 }
 
+.hand-wave {
+    width: 70px;
+    height: 70px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -85,7 +90,10 @@ a {
     .home-section p {
         font-size: 28px;
     }
-
+    .hand-wave {
+        width: 35px;
+        height: 35px;
+    }
     .btn--bg {
         padding: 0.8rem 1rem;
         font-size: 0.9rem;
