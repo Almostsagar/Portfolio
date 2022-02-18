@@ -270,8 +270,8 @@ li.active a span.links_name {
 }
 
 .sidebar.open~.home-section {
-  left: 250px;
-  width: calc(100% - 250px);
+  left: 0;
+  width: calc(100% - 0px);
 }
 
 .home-section .text {
