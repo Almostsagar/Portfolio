@@ -6,6 +6,7 @@
 /* ::selection {
     user-select: none;
 } */
+
 :root {
     --primary-color: #00ffc8;
     --secondary-color: #6b6b6b;
@@ -50,7 +51,7 @@ img {
 
     font-size: 5vh;
 }
-@media (max-width: 600px) {
+@media (max-width: 605) {
     
 
     #projects_section .text {

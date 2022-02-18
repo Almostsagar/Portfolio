@@ -348,10 +348,10 @@ $breakpoint arguement choices:
 - tab-port
 - tab-land
 - big-desktop
-
+604.8 * 284.1
 Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
 */
-@media (max-width: 600px) {
+@media (max-width: 605px) {
   .scrollto.active {
     bottom: 2px;
   }
@@ -382,10 +382,10 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 .sidebar.open .logo-details #btn {
   left: -86px;
   }
-  .sidebar.open~.home-section {
+  /* .sidebar.open~.home-section {
     /* left: -270px; */
     /* width: 0; */
-}
+/* } */
 .sidebar .logo-details {
   position: fixed;
   top: 10px;
