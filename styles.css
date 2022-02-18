@@ -288,10 +288,10 @@ li.active a span.links_name {
     opacity: 0.5;
   }
 
-  .sidebar li a:hover {
+  /* .sidebar li a:hover {
     background: #040b14;
   }
-  
+   */
 }
 
 
@@ -380,12 +380,12 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   .scrollto.active {
     bottom: 2px;
   }
-
+/* 
   .sidebar li a .links_name:hover,
   .sidebar li a i:hover {
     color: white;
 
-  }
+  } */
 
   /* .sidebar li a i:hover,
   .sidebar li a span.links_name:hover {
@@ -414,7 +414,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 
   .sidebar.open .nav-list {
     display: block;
-    width: 70%;
+    width: 90%;
     margin-top: 70px;
   }
 
