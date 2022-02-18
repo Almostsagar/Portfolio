@@ -16,5 +16,3 @@ $(document).ready(function () {
 // link.href = "https://duckduckgo.com/?q=a+tag+inside+a+tag+html&ia=web";
 // link.target = '_blank';
 
-
-

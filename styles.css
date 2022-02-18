@@ -268,12 +268,18 @@ li.active a span.links_name {
   font-size: 18px;
   border-radius: 12px;
 }
-
 .sidebar.open~.home-section {
   left: 0;
   width: calc(100% - 0px);
 }
 
+@media (max-width: 605px) {
+  .sidebar.open~.home-section {
+    left: 0;
+    width: calc(100% - 0px);
+    opacity: 0.5;
+  }
+}
 .home-section .text {
   display: inline-block;
   color: #040b14;
