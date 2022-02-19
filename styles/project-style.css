@@ -36,25 +36,42 @@ img {
 #projects_section .text {
     padding-left: 20px;
     padding-top: 20px;
-
     font-size: 5vh;
 }
 #certi_section .text {
     padding-left: 20px;
     padding-top: 20px;
-
     font-size: 5vh;
 }
 #contactheader .text {
     padding-left: 20px;
     padding-top: 20px;
-
+    font-size: 5vh;
+}
+#exp_section .text {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 5vh;
+}
+#edu_section .text {
+    padding-left: 20px;
+    padding-top: 20px;
     font-size: 5vh;
 }
 @media (max-width: 605px) {
     
 
     #projects_section .text {
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 25px;
+    }
+    #exp_section .text {
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 25px;
+    }
+    #edu_section .text {
         padding-top: 20px;
         padding-bottom: 5px;
         font-size: 25px;

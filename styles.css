@@ -331,17 +331,6 @@ li.active a span.links_name {
   z-index: 2;
 }
 
-/* #skills_section {
-  background: #999999;
-} */
-
-#edu_section {
-  background: #999999;
-}
-
-/* #certi_section {
-  background: #999999;
-} */
 
 #contact_section {
   display: flex;

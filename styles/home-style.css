@@ -35,9 +35,9 @@ h3 {
 }
 
 h2 {
-    color: rgb(255, 255, 255);
+    color: var(--light);
     font-size: 25px;    
-    margin-left: 2vh;
+    margin-left: 0;
 }
 
 .home-section p {
@@ -45,7 +45,7 @@ h2 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 3px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .wel-buts {
@@ -87,6 +87,9 @@ a {
 }
 
 @media (max-width: 605px) {
+    h2 {
+        font-size: 20px;    
+    }
     .home-section p {
         font-size: 28px;
     }
