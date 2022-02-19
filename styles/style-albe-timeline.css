@@ -61,7 +61,7 @@ section#timeline:before {
 section#timeline div[class*="group"] {
     text-align: center;
     font-weight: bold;
-    color: #09F;
+    color: #888;
     font-size: 1.2em;
     letter-spacing: 5px;
     margin: 25px 0px 25px 4px;
@@ -87,7 +87,7 @@ section#timeline>article>div.panel:before {
     content: ' ';
     width: 20px;
     height: 20px;
-    background: #F7F7F7;
+    background: #888;
     display: block;
     position: absolute;
     margin: 0 auto;
@@ -161,7 +161,7 @@ section#timeline>article.inverted>div.panel div.badge {
 }
 
 section#timeline>article:hover>div.panel:before {
-    background: #09F;
+    background: var(--primary-color);;
     border: 2px solid #FFF;
 }
 
@@ -208,8 +208,8 @@ section#timeline>article>div.panel div.badge:last-child {
         text-align: center;
         float: none;
         width: 100%;
-        border-top: 2px solid #09F;
-        border-bottom: 2px solid rgb(0, 153, 255);
+        /* border-top: 2px solid #09F; */
+        /* border-bottom: 2px solid rgb(0, 153, 255); */
         top: 20px;
         margin-bottom: 30px;
         border-radius: 0;

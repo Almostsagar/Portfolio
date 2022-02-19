@@ -27,781 +27,799 @@
 </head>
 
 
-<body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="logo-details">
-            <!-- <div class="logo_name">Sagar Kumar</div> -->
-            <i class='bx bx-menu' id="btn"></i>
+<body onload="myFunction()">
+<div id="loading"></div>
+
+    <!-- <div id="loading">
+        <div class="loader-inner ball-pulse">
+        </div><span class="tooltip">
+    </div> -->
+
+    <div class="mainsec">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo-details">
+                <!-- <div class="logo_name">Sagar Kumar</div> -->
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="links">
+                    <a href="#home_section">
+                        <i class='bx bx-home'></i>
+                        <span class="links_name">Home</span>
+                    </a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li class="links">
+                    <a href="#about_section">
+                        <i class='bx bx-user'></i>
+                        <span class="links_name">About</span>
+                    </a>
+                    <span class="tooltip">About</span>
+                </li>
+                <li class="links">
+                    <a href="#skills_section">
+                        <i class='bx bx-code-block'></i>
+                        <span class="links_name">Skills</span>
+                    </a>
+                    <span class="tooltip">Skills</span>
+                </li>
+                <li class="links">
+                    <a href="#projects_section">
+                        <i class='bx bx-code-alt'></i>
+                        <span class="links_name">Projects</span>
+                    </a>
+                    <span class="tooltip">Projects</span>
+                </li>
+                <li class="links">
+                    <a href="#edu_section">
+                        <i class='bx bxs-graduation'></i>
+                        <span class="links_name">Education</span>
+                    </a>
+                    <span class="tooltip">Education</span>
+                </li>
+                <li class="links">
+                    <a href="#exp_section">
+                        <i class='bx bx-briefcase'></i>
+                        <span class="links_name">Experience</span>
+                    </a>
+                    <span class="tooltip">Experience</span>
+                </li>
+                <li class="links">
+                    <a href="#certi_section">
+                        <i class='bx bx-award'></i>
+                        <span class="links_name">Certificates</span>
+                    </a>
+                    <span class="tooltip">Certificates</span>
+                </li>
+                <li class="links">
+                    <a href="#contact_section">
+                        <i class='bx bx-phone-call'></i>
+                        <span class="links_name">Contact me</span>
+                    </a>
+                    <span class="tooltip">Contact me</span>
+                </li>
+            </ul>
         </div>
-        <ul class="nav-list">
-            <li class="links">
-                <a href="#home_section">
-                    <i class='bx bx-home'></i>
-                    <span class="links_name">Home</span>
-                </a>
-                <span class="tooltip">Home</span>
-            </li>
-            <li class="links">
-                <a href="#about_section">
-                    <i class='bx bx-user'></i>
-                    <span class="links_name">About</span>
-                </a>
-                <span class="tooltip">About</span>
-            </li>
-            <li class="links">
-                <a href="#skills_section">
-                    <i class='bx bx-code-block'></i>
-                    <span class="links_name">Skills</span>
-                </a>
-                <span class="tooltip">Skills</span>
-            </li>
-            <li class="links">
-                <a href="#projects_section">
-                    <i class='bx bx-code-alt'></i>
-                    <span class="links_name">Projects</span>
-                </a>
-                <span class="tooltip">Projects</span>
-            </li>
-            <li class="links">
-                <a href="#edu_section">
-                    <i class='bx bxs-graduation'></i>
-                    <span class="links_name">Education</span>
-                </a>
-                <span class="tooltip">Education</span>
-            </li>
-            <li class="links">
-                <a href="#exp_section">
-                    <i class='bx bx-briefcase'></i>
-                    <span class="links_name">Experience</span>
-                </a>
-                <span class="tooltip">Experience</span>
-            </li>
-            <li class="links">
-                <a href="#certi_section">
-                    <i class='bx bx-award'></i>
-                    <span class="links_name">Certificates</span>
-                </a>
-                <span class="tooltip">Certificates</span>
-            </li>
-            <li class="links">
-                <a href="#contact_section">
-                    <i class='bx bx-phone-call'></i>
-                    <span class="links_name">Contact me</span>
-                </a>
-                <span class="tooltip">Contact me</span>
-            </li>
-        </ul>
-    </div>
 
 
-    <!-- Scroll to -->
-    <div class="scrollto" onclick="scrollto()">
-        <span class="tooltiptext">Scroll to top?</span>
-    </div>
-    <!-- Socials -->
-    <div class="icons">
-        <a target="_blank" href="https://www.instagram.com/sagar.083">
-            <i class='bx bxl-instagram bx-lg icons-sm'></i>
-        </a>
-        <a target="_blank" href="https://www.twitter.com/almostsagar">
-            <i class='bx bxl-twitter bx-lg icons-sm'></i>
-        </a>
-        <a target="_blank" href="https://www.github.com/almostsagar">
-            <i class='bx bxl-github bx-lg icons-sm'></i>
-        </a>
-        <a target="_blank" href="https://stackoverflow.com//users/14549857/sagar-kumar">
-            <i class='bx bxl-stack-overflow bx-lg icons-sm'></i>
-        </a>
-    </div>
+        <!-- Scroll to -->
+        <div class="scrollto" onclick="scrollto()">
+            <span class="tooltiptext">Scroll to top?</span>
+        </div>
+        <!-- Socials -->
+        <div class="icons">
+            <a target="_blank" href="https://www.instagram.com/sagar.083">
+                <i class='bx bxl-instagram bx-lg icons-sm'></i>
+            </a>
+            <a target="_blank" href="https://www.twitter.com/almostsagar">
+                <i class='bx bxl-twitter bx-lg icons-sm'></i>
+            </a>
+            <a target="_blank" href="https://www.github.com/almostsagar">
+                <i class='bx bxl-github bx-lg icons-sm'></i>
+            </a>
+            <a target="_blank" href="https://stackoverflow.com//users/14549857/sagar-kumar">
+                <i class='bx bxl-stack-overflow bx-lg icons-sm'></i>
+            </a>
+        </div>
 
-    <!-- main -->
-    <section class="home-section" id="home_section">
-        <!-- <div class="head">
+        <!-- main -->
+        <section class="home-section" id="home_section">
+            <!-- <div class="head">
       <img src="./assets/profile.jpg" alt="">
       <h2>Sagar Kumar</h2>
     </div> -->
 
-        <p>Hey , <a href="./assets/giphy.gif" data-lightbox="bilai" data-title="bilai"><img
-                    src="./assets/wave-hello.gif" alt="hello" class="hand-wave"></a><span> I'm Sagar </span></p>
-        <h3 style="color: #fff; text-align: center; ">
-            I'm <span class="typing"></span>
-        </h3>
-        <div class="wel-buts">
-            <a href="#projects_section" class="btn btn--bg">Projects</a>
-            <a href="#contact_section" class="btn btn--bg">Contact</a>
-        </div>
-    </section>
+            <p>Hey , <a href="./assets/giphy.gif" data-lightbox="bilai" data-title="bilai"><img
+                        src="./assets/wave-hello.gif" alt="hello" class="hand-wave"></a><span> I'm Sagar </span></p>
+            <h3 style="color: #fff; text-align: center; ">
+                I'm <span class="typing"></span>
+            </h3>
+            <div class="wel-buts">
+                <a href="#projects_section" class="btn btn--bg">Projects</a>
+                <a href="#contact_section" class="btn btn--bg">Contact</a>
+            </div>
+        </section>
 
-    <section class="home-section" id="about-section">
-        <div id="about_section">
-            <div class="text heading-text">About Me</div>
-            <div class="content-abt">
-                <img src="./assets/profile2.png" alt="sagar's image">
-                <p>Hello, My name is Sagar Kumar. I am a Software Developer from Ramgarh, Jharkhand, India. Currently, I
-                    am in
-                    Junior year of B.Tech(C. Sci.) degree. <br> <br>
-                    I love working on a variety of technologies including Web Development, Mobile App Development and
-                    Java
-                    Development.
-                    My goal is to build highly performant applications that solve real-world problems and provide users
-                    with an
-                    awesome experience.</p>
+        <section class="home-section" id="about-section">
+            <div id="about_section">
+                <div class="text heading-text">About Me</div>
+                <div class="content-abt">
+                    <img src="./assets/profile2.png" alt="sagar's image">
+                    <p>Hello, My name is Sagar Kumar. I am a Software Developer from Ramgarh, Jharkhand, India.
+                        Currently, I
+                        am in
+                        Junior year of B.Tech(C. Sci.) degree. <br> <br>
+                        I love working on a variety of technologies including Web Development, Mobile App Development
+                        and
+                        Java
+                        Development.
+                        My goal is to build highly performant applications that solve real-world problems and provide
+                        users
+                        with an
+                        awesome experience.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="home-section" id="skills_section">
-        <header class="text">Skills</header>
-        <div class="skill">
-            <div class="set">
-                <span class="fas fa-globe"></span>
-                <header>Web Development</header>
-                <div class="list">
-                    <label>Html</label>
-                    <i class="fab fa-html5"></i>
+        <section class="home-section" id="skills_section">
+            <header class="text">Skills</header>
+            <div class="skill">
+                <div class="set">
+                    <span class="fas fa-globe"></span>
+                    <header>Web Development</header>
+                    <div class="list">
+                        <label>Html</label>
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="list">
+                        <label>Css</label>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="list">
+                        <label>JavaScript</label>
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="list">
+                        <label>Php</label>
+                        <i class="fab fa-php"></i>
+                    </div>
                 </div>
-                <div class="list">
-                    <label>Css</label>
-                    <i class="fab fa-css3-alt"></i>
+                <div class="set">
+                    <span class="fas fa-tools"></span>
+                    <header>Frameworks/ Tools </header>
+                    <div class="list">
+                        <label>Angular</label>
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <div class="list">
+                        <label>Node.js</label>
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="list">
+                        <label>Bootstrap</label>
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
                 </div>
-                <div class="list">
-                    <label>JavaScript</label>
-                    <i class="fab fa-js"></i>
-                </div>
-                <div class="list">
-                    <label>Php</label>
-                    <i class="fab fa-php"></i>
-                </div>
-            </div>
-            <div class="set">
-                <span class="fas fa-tools"></span>
-                <header>Frameworks/ Tools </header>
-                <div class="list">
-                    <label>Angular</label>
-                    <i class="fab fa-angular"></i>
-                </div>
-                <div class="list">
-                    <label>Node.js</label>
-                    <i class="fab fa-node-js"></i>
-                </div>
-                <div class="list">
-                    <label>Bootstrap</label>
-                    <i class="fab fa-bootstrap"></i>
-                </div>
-            </div>
-            <div class="set">
-                <span class="fas fa-mobile-alt"></span>
-                <header>Mobile Development</header>
-                <div class="list">
-                    <label>Android</label>
-                    <i class="fab fa-android"></i>
-                </div>
-                <div class="list">
-                    <label>Ios</label>
-                    <i class="fab fa-apple"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="home-section" id="projects_section">
-        <header class="text">Projects</header>
-        <div class="container-fluid filterbox">
-            <div class="filter-tabs">
-                <div class="filter-sort">
-                    <div class="navigation">
-                        <a href="javascript:void(0)" data-filter="all" class="button active">All</a>
-                        <a href="javascript:void(0)" data-filter="web" class="button ">Web</a>
-                        <a href="javascript:void(0)" data-filter="flutter" class="button ">Flutter</a>
-                        <a href="javascript:void(0)" data-filter="android" class="button ">Android</a>
-                        <a href="javascript:void(0)" data-filter="uiux" class="button ">UI/UX</a>
+                <div class="set">
+                    <span class="fas fa-mobile-alt"></span>
+                    <header>Mobile Development</header>
+                    <div class="list">
+                        <label>Android</label>
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <div class="list">
+                        <label>Ios</label>
+                        <i class="fab fa-apple"></i>
                     </div>
                 </div>
             </div>
-            <div class="main-wrap wrap-inner">
-                <div id="content">
-                    <div class="main-full" id="main">
-                        <ol class="content">
-                            <li class="common team shot-thumbnail web">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="/assets/1.png" class="dribble-over" data-lightbox="mygallary1"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
-                                          <i class="fa fa-code"></i>
-                                          <i class="fa fa-tv"></i>
-                                      </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <span class="m-team">Html</span>
-                                                <span class="m-team">Css</span>
-                                                <span class="m-team">Js </span>
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-code"></i>
-                                                    </a>
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="common team shot-thumbnail web">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary2"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
-                                          <i class="fa fa-code"></i>
-                                          <i class="fa fa-tv"></i>
-                                      </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <span class="m-team">Html</span>
-                                                <span class="m-team">Css</span>
-                                                <span class="m-team">Js </span>
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-code"></i>
-                                                    </a>
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="common team shot-thumbnail flutter">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary3"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
-                                          <i class="fa fa-code"></i>
-                                          <i class="fa fa-tv"></i>
-                                      </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <span class="m-team">Html</span>
-                                                <span class="m-team">Css</span>
-                                                <span class="m-team">Js </span>
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-code"></i>
-                                                    </a>
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="common team shot-thumbnail flutter">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary4"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
-                                          <i class="fa fa-code"></i>
-                                          <i class="fa fa-tv"></i>
-                                      </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <span class="m-team">Html</span>
-                                                <span class="m-team">Css</span>
-                                                <span class="m-team">Js </span>
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-code"></i>
-                                                    </a>
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="common team shot-thumbnail android">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary5"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
-                                          <i class="fa fa-code"></i>
-                                          <i class="fa fa-tv"></i>
-                                      </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <span class="m-team">Html</span>
-                                                <span class="m-team">Css</span>
-                                                <span class="m-team">Js </span>
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-code"></i>
-                                                    </a>
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="common team shot-thumbnail uiux">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary6"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
-                                          <i class="fa fa-code"></i>
-                                          <i class="fa fa-tv"></i>
-                                      </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <span class="m-team">Html</span>
-                                                <span class="m-team">Css</span>
-                                                <span class="m-team">Js </span>
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-code"></i>
-                                                    </a>
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="home-section" id="edu_section">
-        <header class="text">Education</header>
-        <div id="myTimeline">
-            <section id="timeline">
-                <div id="year2016" class="group2016">2007</div>
-                <article class="animated fadeInUp">
-                    <div class="panel">
-                        <!-- <div class="badge">20 Jan</div> -->
-                        <div class="panel-body">
-                            <!-- <img src="./img/qrcode.png" width="150px" class="img-responsive"> -->
-                            <h2>Catholic Ashram school, Bhurkhunda</h2>
-                            <p>Lorem ipsum dolor sit amet, nisl lorem.</p>
+        <section class="home-section" id="projects_section">
+            <header class="text">Projects</header>
+            <div class="container-fluid filterbox">
+                <div class="filter-tabs">
+                    <div class="filter-sort">
+                        <div class="navigation">
+                            <a href="javascript:void(0)" data-filter="all" class="button active">All</a>
+                            <a href="javascript:void(0)" data-filter="web" class="button ">Web</a>
+                            <a href="javascript:void(0)" data-filter="flutter" class="button ">Flutter</a>
+                            <a href="javascript:void(0)" data-filter="android" class="button ">Android</a>
+                            <a href="javascript:void(0)" data-filter="uiux" class="button ">UI/UX</a>
                         </div>
                     </div>
-                </article>
-                <div id="year2015" class="group2015">2017</div>
-                <article class="animated fadeInUp inverted">
-                    <div class="panel">
-                        <!-- <div class="badge">29 Mar</div> -->
-                        <div class="panel-heading">
-                        </div>
-                        <div class="panel-body">
-                            <h2>Sri Agrasen School, Bhurkhunda</h2>
-                            <p>Lorem ipsum dolor sit amet, nisl lorem.</p>
-                        </div>
-                    </div>
-                </article>
-                <div id="year2016" class="group2016">2019</div>
-                <article class="animated fadeInUp">
-                    <div class="panel">
-                        <!-- <div class="badge">20 Jan</div> -->
-                        <div class="panel-body">
-                            <!-- <img src="./img/qrcode.png" width="150px" class="img-responsive"> -->
-                            <h2>GIET University, Gunupur</h2>
-                            <p>Lorem ipsum dolor sit amet, nisl lorem.</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="animated fadeInUp">
-                    <div class="panel">
-                        <div class="badge">&nbsp;</div>
-                    </div>
-                </article>
-                <div class="clearfix" style="float: none;"></div>
-            </section>
-        </div>
-    </section>
-
-    <section class="home-section" id="exp_section">
-        <header class="text">Experience</header>
-        <div id="myTimeline">
-            <section id="timeline">
-                <div id="year2020" class="group2020">2020</div>
-                <article class="animated fadeInUp">
-                    <div class="panel">
-                        <!-- <div class="badge">20 Jan</div> -->
-                        <div class="panel-body">
-                            <h2>Era Interfaces - Flutter Developer</h2>
-                            <p>Lorem ipsum dolor sit amet, nisl lorem.</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="animated fadeInUp">
-                    <div class="panel">
-                        <div class="badge">&nbsp;</div>
-                    </div>
-                </article>
-                <div class="clearfix" style="float: none;"></div>
-            </section>
-        </div>
-    </section>
-
-    <section class="home-section" id="certi_section">
-        <header class="text">Certificates</header>
-        <div class="container-fluid filterbox">
-            <div class="main-wrap wrap-inner">
-                <div id="content">
-                    <div class="main-full" id="main">
-                        <ol class="content">
-                            <li class="common team shot-thumbnail all web flutter android uiux">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
+                </div>
+                <div class="main-wrap wrap-inner">
+                    <div id="content">
+                        <div class="main-full" id="main">
+                            <ol class="content">
+                                <li class="common team shot-thumbnail web">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="/assets/1.png" class="dribble-over" data-lightbox="mygallary1"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
                                           <i class="fa fa-code"></i>
                                           <i class="fa fa-tv"></i>
                                       </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <!-- <span class="m-team">Html</span>
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <span class="m-team">Html</span>
+                                                    <span class="m-team">Css</span>
+                                                    <span class="m-team">Js </span>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-code"></i>
+                                                        </a>
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="common team shot-thumbnail web">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary2"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <span class="m-team">Html</span>
+                                                    <span class="m-team">Css</span>
+                                                    <span class="m-team">Js </span>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-code"></i>
+                                                        </a>
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="common team shot-thumbnail flutter">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary3"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <span class="m-team">Html</span>
+                                                    <span class="m-team">Css</span>
+                                                    <span class="m-team">Js </span>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-code"></i>
+                                                        </a>
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="common team shot-thumbnail flutter">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary4"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <span class="m-team">Html</span>
+                                                    <span class="m-team">Css</span>
+                                                    <span class="m-team">Js </span>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-code"></i>
+                                                        </a>
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="common team shot-thumbnail android">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary5"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <span class="m-team">Html</span>
+                                                    <span class="m-team">Css</span>
+                                                    <span class="m-team">Js </span>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-code"></i>
+                                                        </a>
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="common team shot-thumbnail uiux">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary6"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <span class="m-team">Html</span>
+                                                    <span class="m-team">Css</span>
+                                                    <span class="m-team">Js </span>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-code"></i>
+                                                        </a>
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section" id="edu_section">
+            <header class="text">Education</header>
+            <div id="myTimeline">
+                <section id="timeline">
+                    <div id="year2016" class="group2016">2007</div>
+                    <article class="animated fadeInUp">
+                        <div class="panel">
+                            <!-- <div class="badge">20 Jan</div> -->
+                            <div class="panel-body">
+                                <!-- <img src="./img/qrcode.png" width="150px" class="img-responsive"> -->
+                                <h2>Catholic Ashram school, Bhurkhunda</h2>
+                                <p>Lorem ipsum dolor sit amet, nisl lorem.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <div id="year2015" class="group2015">2017</div>
+                    <article class="animated fadeInUp inverted">
+                        <div class="panel">
+                            <!-- <div class="badge">29 Mar</div> -->
+                            <div class="panel-heading">
+                            </div>
+                            <div class="panel-body">
+                                <h2>Sri Agrasen School, Bhurkhunda</h2>
+                                <p>Lorem ipsum dolor sit amet, nisl lorem.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <div id="year2016" class="group2016">2019</div>
+                    <article class="animated fadeInUp">
+                        <div class="panel">
+                            <!-- <div class="badge">20 Jan</div> -->
+                            <div class="panel-body">
+                                <!-- <img src="./img/qrcode.png" width="150px" class="img-responsive"> -->
+                                <h2>GIET University, Gunupur</h2>
+                                <p>Lorem ipsum dolor sit amet, nisl lorem.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="animated fadeInUp">
+                        <div class="panel">
+                            <div class="badge">&nbsp;</div>
+                        </div>
+                    </article>
+                    <div class="clearfix" style="float: none;"></div>
+                </section>
+            </div>
+        </section>
+
+        <section class="home-section" id="exp_section">
+            <header class="text">Experience</header>
+            <div id="myTimeline">
+                <section id="timeline">
+                    <div id="year2020" class="group2020">2020</div>
+                    <article class="animated fadeInUp">
+                        <div class="panel">
+                            <!-- <div class="badge">20 Jan</div> -->
+                            <div class="panel-body">
+                                <h2>Era Interfaces - Flutter Developer</h2>
+                                <p>Lorem ipsum dolor sit amet, nisl lorem.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="animated fadeInUp">
+                        <div class="panel">
+                            <div class="badge">&nbsp;</div>
+                        </div>
+                    </article>
+                    <div class="clearfix" style="float: none;"></div>
+                </section>
+            </div>
+        </section>
+
+        <section class="home-section" id="certi_section">
+            <header class="text">Certificates</header>
+            <div class="container-fluid filterbox">
+                <div class="main-wrap wrap-inner">
+                    <div id="content">
+                        <div class="main-full" id="main">
+                            <ol class="content">
+                                <li class="common team shot-thumbnail all web flutter android uiux">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
+                                          <i class="fa fa-code"></i>
+                                          <i class="fa fa-tv"></i>
+                                      </span> -->
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <!-- <span class="m-team">Html</span>
                                           <span class="m-team">Css</span>
                                           <span class="m-team">Js </span> -->
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="common team shot-thumbnail all web flutter android uiux">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
+                                </li>
+                                <li class="common team shot-thumbnail all web flutter android uiux">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
                                           <i class="fa fa-code"></i>
                                           <i class="fa fa-tv"></i>
                                       </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <!-- <span class="m-team">Html</span>
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <!-- <span class="m-team">Html</span>
                                           <span class="m-team">Css</span>
                                           <span class="m-team">Js </span> -->
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="common team shot-thumbnail all web flutter android uiux">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
+                                </li>
+                                <li class="common team shot-thumbnail all web flutter android uiux">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
                                           <i class="fa fa-code"></i>
                                           <i class="fa fa-tv"></i>
                                       </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <!-- <span class="m-team">Html</span>
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <!-- <span class="m-team">Html</span>
                                           <span class="m-team">Css</span>
                                           <span class="m-team">Js </span> -->
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="common team shot-thumbnail all web flutter android uiux">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
+                                </li>
+                                <li class="common team shot-thumbnail all web flutter android uiux">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
                                           <i class="fa fa-code"></i>
                                           <i class="fa fa-tv"></i>
                                       </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <!-- <span class="m-team">Html</span>
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <!-- <span class="m-team">Html</span>
                                           <span class="m-team">Css</span>
                                           <span class="m-team">Js </span> -->
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="common team shot-thumbnail all web flutter android uiux">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
+                                </li>
+                                <li class="common team shot-thumbnail all web flutter android uiux">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
                                           <i class="fa fa-code"></i>
                                           <i class="fa fa-tv"></i>
                                       </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <!-- <span class="m-team">Html</span>
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <!-- <span class="m-team">Html</span>
                                           <span class="m-team">Css</span>
                                           <span class="m-team">Js </span> -->
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="common team shot-thumbnail all web flutter android uiux">
-                                <div class="multi-shot">
-                                    <div class="dribble-img">
-                                        <a href="#" class="dribble-link">
-                                            <picture>
-                                                <img src="./assets/1.png" alt="image-1">
-                                            </picture>
-                                        </a>
-                                        <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
-                                            data-title="Dribble">
-                                            <strong class="hover-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
-                                                laborum,
-                                                aliqua
-                                            </strong>
-                                            <!-- <span class="icons">
+                                </li>
+                                <li class="common team shot-thumbnail all web flutter android uiux">
+                                    <div class="multi-shot">
+                                        <div class="dribble-img">
+                                            <a href="#" class="dribble-link">
+                                                <picture>
+                                                    <img src="./assets/1.png" alt="image-1">
+                                                </picture>
+                                            </a>
+                                            <a href="./assets/1.png" class="dribble-over" data-lightbox="mygallary"
+                                                data-title="Dribble">
+                                                <strong class="hover-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam
+                                                    laborum,
+                                                    aliqua
+                                                </strong>
+                                                <!-- <span class="icons">
                                           <i class="fa fa-code"></i>
                                           <i class="fa fa-tv"></i>
                                       </span> -->
-                                        </a>
-                                        <div class="dribble-title">
-                                            <h3>My Portfolio
-                                                <!-- <span class="m-team">Html</span>
+                                            </a>
+                                            <div class="dribble-title">
+                                                <h3>My Portfolio
+                                                    <!-- <span class="m-team">Html</span>
                                           <span class="m-team">Css</span>
                                           <span class="m-team">Js </span> -->
-                                                <span class="comment">
-                                                    <a href="https://github.com/Almostsagar" target="_blank">
-                                                        <i class="fa fa-tv"></i>
-                                                    </a>
-                                                </span>
-                                            </h3>
+                                                    <span class="comment">
+                                                        <a href="https://github.com/Almostsagar" target="_blank">
+                                                            <i class="fa fa-tv"></i>
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
 
-                        </ol>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact -->
-    <section class="home-section" id="contactheader">
-        <header class="text">Contact</header>
-        <div class="nayacontainer" id="contact_section">
-            <div class="wrapper">
-                <header> Send me a message </header>
-                <!-- <form action="https://formspree.io/f/mbjwdoqa" method="POST"> -->
-                <form action="#contact_section" method="POST">
-                    <div class="dbl-field">
-                        <div class="field">
-                            <input type="text" name="name" placeholder="Enter your name">
-                            <i class="fas fa-user"></i>
+        <!-- Contact -->
+        <section class="home-section" id="contactheader">
+            <header class="text">Contact</header>
+            <div class="nayacontainer" id="contact_section">
+                <div class="wrapper">
+                    <header> Send me a message </header>
+                    <!-- <form action="https://formspree.io/f/mbjwdoqa" method="POST"> -->
+                    <form action="#contact_section" method="POST">
+                        <div class="dbl-field">
+                            <div class="field">
+                                <input type="text" name="name" placeholder="Enter your name">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="email" name="_replyto" placeholder="Enter your email" required>
+                                <i class="fas fa-envelope"></i>
+                            </div>
                         </div>
-                        <div class="field">
-                            <input type="text" name="email" name="_replyto" placeholder="Enter your email" required>
-                            <i class="fas fa-envelope"></i>
+                        <div class="dbl-field">
+                            <div class="field">
+                                <input type="text" name="phone" placeholder="Enter your phone" required>
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="website" placeholder="Enter your website">
+                                <i class="fas fa-globe"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dbl-field">
-                        <div class="field">
-                            <input type="text" name="phone" placeholder="Enter your phone" required>
-                            <i class="fas fa-phone-alt"></i>
+                        <div class="message">
+                            <textarea name="message" placeholder="Enter your message.... " required></textarea>
+                            <i class="material-icons">message</i>
                         </div>
-                        <div class="field">
-                            <input type="text" name="website" placeholder="Enter your website">
-                            <i class="fas fa-globe"></i>
+                        <div class="button-area">
+                            <button type="submit">
+                                Send Message
+                            </button>
+                            <span>Sending Your Message....</span>
                         </div>
-                    </div>
-                    <div class="message">
-                        <textarea name="message" placeholder="Enter your message.... " required></textarea>
-                        <i class="material-icons">message</i>
-                    </div>
-                    <div class="button-area">
-                        <button type="submit">
-                            Send Message
-                        </button>
-                        <span>Sending Your Message....</span>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+    </div>
     <!-- Contact code  -->
     <script src="./js/script.js"></script>
 
-
+    <script>
+        var preloader = document.getElementById("loading");
+        function myFunction() {
+            preloader.style.display = 'none';
+        };
+    </script>
     <!-- Sidebar code -->
     <script>
         let sidebar = document.querySelector(".sidebar");

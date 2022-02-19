@@ -8,6 +8,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url('https://i.gifer.com/XOsX.gif') no-repeat center center;
+  background-size: 1.6in 2in;
+  z-index: 99999;
+}
+
 ::-moz-selection {
   /* Code for Firefox */
   background: rgb(0, 255, 200);
@@ -293,7 +302,7 @@ li.active a span.links_name {
     background: #040b14;
   }
    */
-   .sidebar .logo-details #btn {
+  .sidebar .logo-details #btn {
     color: rgb(0, 0, 0);
   }
 }
@@ -373,7 +382,8 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   .scrollto.active {
     bottom: 2px;
   }
-/* 
+
+  /* 
   .sidebar li a .links_name:hover,
   .sidebar li a i:hover {
     color: white;
