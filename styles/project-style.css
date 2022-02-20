@@ -232,7 +232,7 @@ ol.content {
     color: var(--six-color);
     font-weight: 500;
     color: var(--light);
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: 600;
     letter-spacing: normal;
 }
