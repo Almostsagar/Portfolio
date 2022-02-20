@@ -10,7 +10,7 @@
 
 #about-section {
     background: white;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #about_section p {
@@ -55,7 +55,7 @@ $breakpoint arguement choices:
 
 Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
 */
-@media (max-width: 600px) {
+@media (max-width: 605px) {
     .content-abt {
         flex-direction: column;
         margin-top: 0;
@@ -75,4 +75,18 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
         text-align: center;
         font-size: 25px;
     }
+}
+@media (max-width: 839px) {
+
+.content-abt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+#about_section p {
+    text-align: center;
+    margin: 40px 60px 40px 60px;
+    font-size: 15px;
+}
 }

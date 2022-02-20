@@ -24,6 +24,7 @@ section .skill {
 
 }
 
+
 @media screen and (min-width: 605px) {
     .skill {
         grid-template-columns: repeat(3, 1fr);
@@ -38,7 +39,11 @@ section .skill {
         font-size: 25px;
     }
 }
-
+@media screen and (max-width: 768px){
+    .skill {
+        grid-template-columns: 1fr;
+    }
+}
 .skill .set {
     background-color: white;
     padding: 24px;

@@ -105,6 +105,12 @@ li.active a span.links_name {
   z-index: 1000;
 }
 
+@media screen and (max-width: 1222px) {
+  .icons {
+    display: none;
+  }
+}
+
 .icons-sm {
   padding: 3.5px;
   background: transparent;
@@ -226,13 +232,13 @@ li.active a span.links_name {
   opacity: 0;
   white-space: nowrap;
   pointer-events: none;
-  transition: 0s;
+  transition: 0.5s;
 }
 
 .sidebar li:hover .tooltip {
   opacity: 1;
   pointer-events: auto;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
   top: 50%;
   transform: translateY(-50%);
 }

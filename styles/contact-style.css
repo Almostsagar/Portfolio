@@ -116,7 +116,7 @@ form .button-area {
     height: 25px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 605px) {
     .wrapper {
         width: 100%;
     }
@@ -159,7 +159,7 @@ form .button-area {
     }
 
     #contact_section {
-        padding: 20px 4px;
+        padding: 8px 20px;
     }
 
     form .button-area {
@@ -175,4 +175,10 @@ form .button-area {
         margin: 13px 14px;
     }
 
+}
+@media(max-width: 870px) {
+
+#contact_section {
+    padding: 8px 20px;
+}
 }
