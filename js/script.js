@@ -10,7 +10,7 @@ form.onsubmit = (e) => {
     let xhr = new XMLHttpRequest(); // creating xml object 
     xhr.open("POST", "../php/message.php", true);  // sending post reuesT to message.php file
 
-    xhr.onload = () => {
+    xhr.onload = () => {    
         // once ajax loaded
         if (xhr.readyState == 4 && xhr.status == 200) {
             // if ajax response status is 200 & ready status is 4 means there is no error and we can proceed
