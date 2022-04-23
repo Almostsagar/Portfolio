@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="description" content="My name is Sagar Kumar/ almostsagar. I am from GIET University Gunupur.">
 
     <link rel="stylesheet" href="styles.css">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./assets/profile.png" rel="icon" type="image/x-icon" />
     <title>Sagar's Portfolio</title>
 </head>
@@ -29,6 +29,7 @@
 
 <body onload="myFunction()">
     <div id="loading"></div>
+    <div id="scroll-progress"></div>
 
     <!-- <div id="loading">
         <div class="loader-inner ball-pulse">
@@ -269,7 +270,7 @@
             </div>
         </section>
 
-        <section class="home-section" id="about-section">
+        <section class="home-section" id="about-section" data-aos="fade-right">
             <div id="about_section">
                 <div class="text heading-text">About Me</div>
                 <div class="content-abt">
@@ -290,7 +291,7 @@
             </div>
         </section>
 
-        <section class="home-section" id="skills_section">
+        <section class="home-section" id="skills_section" data-aos="fade-right">
             <header class="text">Skills</header>
             <div class="skill">
                 <div class="set">
@@ -344,7 +345,8 @@
             </div>
         </section>
 
-        <section class="home-section" id="projects_section">
+        <section class="home-section" id="projects_section" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <header class="text">Projects</header>
             <div class="container-fluid filterbox">
                 <div class="filter-tabs">
@@ -582,7 +584,7 @@
             </div>
         </section>
 
-        <section class="home-section" id="edu_section">
+        <section class="home-section" id="edu_section" data-aos="fade-right">
             <header class="text">Education</header>
             <div id="myTimeline">
                 <section id="timeline">
@@ -630,7 +632,7 @@
             </div>
         </section>
 
-        <section class="home-section" id="exp_section">
+        <section class="home-section" id="exp_section" data-aos="fade-right">
             <header class="text">Experience</header>
             <div id="myTimeline">
                 <section id="timeline">
@@ -657,7 +659,8 @@
             </div>
         </section>
 
-        <section class="home-section" id="certi_section">
+        <section class="home-section" id="certi_section" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <header class="text">Certificates</header>
             <div class="container-fluid filterbox">
                 <div class="main-wrap wrap-inner">
@@ -884,7 +887,7 @@
         </section>
 
         <!-- Contact -->
-        <section class="home-section" id="contactheader">
+        <section class="home-section" id="contactheader" data-aos="fade-right">
             <header class="text">Contact</header>
             <div class="nayacontainer" id="contact_section">
                 <div class="wrapper">
@@ -1051,9 +1054,11 @@
 
 
     </script>
-    <script src="./js/jquery-albe-timeline.min.js">
-
-    </script>
+    <script src="./js/jquery-albe-timeline.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/main.js"> </script>
 </body>

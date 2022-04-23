@@ -688,3 +688,14 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
     left: 0;
   }
 }
+
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    width: 0%;
+    height: 4px;
+    background: #7983ff;
+    z-index: 10000;
+}
+
+
